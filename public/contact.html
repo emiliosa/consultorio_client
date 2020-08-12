@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Diagnostico Belgrano</title>
-    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <title>Next Level - Contact</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
   </head>
   <body>
-	  <!-- navbar -->	  
+    <div class="container-fluid">
+      	  <!-- navbar -->	  
     <div class="container-fluid">
       <div class="row tm-brand-row">
         <div class="col-lg-4 col-10">
@@ -38,7 +40,7 @@
                 <ul class="navbar-nav ml-auto mr-0">
                   <li class="nav-item">
                     <div class="tm-nav-link-highlight"></div>
-                    <a class="nav-link" href="#"
+                    <a class="nav-link" href="index.html"
                       ><i class="fa fa-home"></i><span class="sr-only">(current)</span></a
                     >
                   </li>
@@ -68,7 +70,7 @@
 					   <a class="dropdown-item" href="#">Agenda</a>
 					   <div class="dropdown-divider"></div>
 					   <a class="dropdown-item" href="#">Resultados</a>
-					</div>-->
+					</div> -->
 					<!-- Reemplazar: if guest -->
 				  <li class="nav-item dropdown">					
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
@@ -76,7 +78,7 @@
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="index-paciente.html">Pacientes</a>
 					    <div class="dropdown-divider"></div>
-					    <a class="dropdown-item" href="index-profesional.html">Profesionales</a>
+					    <a class="dropdown-item" href="index-paciente.html">Profesionales</a>
 					<!-- Reemplazar: else 
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">user.name&nbsp;&nbsp; <i class="fa fa-user"></i>
@@ -93,78 +95,140 @@
           </div>
         </div>
       </div>
-		<!- End Navbar -->
+		<!-- End Navbar -->
       <div class="row tm-welcome-row">
         <div class="col-12 tm-page-cols-container">
-          <div class="tm-page-col-left tm-welcome-box tm-bg-primary">
+          <div class="tm-page-col-left tm-welcome-box tm-bg-gradient">
             <p class="tm-welcome-text">
-              <em>"La salud de nuestros pacientes es nuestra prioridad."</em>
+              <em
+                >Queremos resolver tus problemas</em
+              >
             </p>
           </div>
           <div class="tm-page-col-right">
             <div
               class="tm-welcome-parallax"
               data-parallax="scroll"
-              data-image-src="img/hero.jpg"
+              data-image-src="img/contact-us.jpg"
             ></div>
           </div>
         </div>
       </div>
 
-      <section class="row tm-pt-4 tm-pb-6">
+      <section class="row tm-pt-4 tm-mb-3">
         <div class="col-12 tm-page-cols-container">
-          <div class="tm-page-col-right">
-            <h2 class="tm-text-secondary tm-mb-5">
-            Somos Diagnostico Belgrano </h2>
-            <p class="tm-mb-6">
-             Somos un grupo de médicos amigos que nos unimos con el sueño de crear una institución médica confiable con objetivos de excelencia. Tomamos la decisión de realizar una actividad asistencial apoyada en la ciencia, calidad y en la calidez humana.
-              
-            </p>
+          <div class="tm-page-col-left">
+            <div class="tm-contact-container tm-mb-6">
+              <div class="tm-address-container">
+                <h2 class="tm-text-secondary tm-mb-6">Dirección</h2>
+                <address>
+                  <p>
+                    11500 Av Maipu<br />
+                    Belgrano<br />
+                    CABA, Argentina
+                </p>
+                </address>
+              </div>
+
+              <div class="tm-location-container">
+                <h2 class="tm-text-secondary tm-mb-4">Ubicación</h2>
+                <a href="#"><img src="img/map.png" alt="Map image" class="img-fluid" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-page-col-right tm-form-container">
+            <h2 class="tm-text-secondary mb-4">Contactanos</h2>
+            <form
+              action="contact.html"
+              method="POST"
+              id="tm_contact_form"
+              enctype="multipart/form-data">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="contact_name"
+                  name="contact_name"
+                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                  placeholder="Nombre Completo"
+                  required="" />
+              </div>
+              <div class="form-group-2">
+                <input
+                  type="email"
+                  id="contact_email"
+                  name="contact_email"
+                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+                  placeholder="Tu email"
+                  required="" />
+              </div>
+              <div class="form-group-2 input-field">
+                <select class="tm-select" name="tipo" id="tipo">
+                  <option value="select">Tipo de problema</option>
+                  <option value="A">Tipo A</option>
+                  <option value="B">Tipo B</option>
+                  <option value="C">Tipo C</option>
+                  <option value="D">Tipo D</option>
+                </select>
+              </div>
+              <div class="form-group tm-choices-container tm-text-secondary">
+                <label class="tm-w-50">
+                  <input
+                    type="radio"
+                    class="with-gap"
+                    name="gender"
+                    value="male" />
+                  <span>Masculino</span>
+                </label>
+
+                <label class="tm-w-50">
+                  <input
+                    type="radio"
+                    class="with-gap"
+                    name="gender"
+                    value="female" />
+                  <span>Femenino</span>
+                </label>
+              </div>
+
+              <div class="tm-mb-5">
+                <textarea
+                  rows="10"
+                  id="contact_message"
+                  name="contact_message"
+                  class="form-control rounded-0"
+                  placeholder="Describa el problema"
+                  required=""></textarea>
+              </div>
+
+              <div class="tm-mb-4 tm-choices-container tm-text-secondary">
+                <label class="tm-w-50">
+                  <input
+                    type="checkbox"
+                    name="ckb[]"
+                    class="filled-in"
+                    value="1" />
+                  <span>Check Box 1</span>
+                </label>
+                <label class="tm-w-50">
+                  <input
+                    type="checkbox"
+                    name="ckb[]"
+                    class="filled-in"
+                    value="2" />
+                  <span>Check Box 2</span>
+                </label>
+              </div>             
+              <div class="">
+                <button
+                  type="submit"
+                  class="btn btn-secondary tm-btn-submit rounded-0">
+                  Enviar
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
-
-      <div class="tm-page-col-right">
-        <div class="row tm-pt-7 tm-pb-6">
-          <div class="col-md-6 tm-home-section-2-left">
-            <div
-              class="img-fluid tm-mb-4 tm-small-parallax"
-              data-parallax="scroll"
-              data-image-src="img/eorders.jpg"></div>
-            <div>
-              <h3 class="tm-text-secondary tm-mb-4">
-                Consultas virtuales
-              </h3>
-              <p class="tm-mb-5">
-                En estos tiempos de incertidumbre, estamos mas cerca de quienes mas lo necesitan.
-              </p>
-              <ul class="tm-list-plus">
-                <li>Consultas virtuales</li>
-                <li>Recetas virtuales</li>
-                <li>Seguridad para tus seres queridos</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6 tm-home-section-2-right">
-            <div
-              class="img-fluid tm-mb-4 tm-small-parallax"
-              data-parallax="scroll"
-              data-image-src="img/coronavirus.jpg"></div>
-            <div>
-              <h3 class="tm-text-secondary tm-mb-4">
-                COVID-19
-              </h3>
-              <p class="tm-section-2-text">
-                Realizamos test de detección de <strong>Anticuerpos</strong> y <strong>PCR</strong>. 
-              </p>
-              <p>
-                El coronavirus, que causa la pandemia mundial, pertenece a una familia de virus (Cov). Los virus de esta familia pueden causar desde resfriados comunes hasta enfermedades más graves, como el síndrome respiratorio agudo severo (SARS) y el síndrome respiratorio del Medio Oriente (Mers). El nuevo coronavirus fue nombrado SARS-COV-2 por la Organización Mundial de la Salud (OMS) y la enfermedad que causa se llama COVID-19.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- row -->
 
       <!-- Call to Action -->
       <section class="row" id="tmCallToAction">
@@ -193,12 +257,30 @@
       <!-- Page footer -->
       <footer class="row tm-page-footer">
         <p class="col-12 tm-copyright-text mb-0">
-        Copyright &copy; 2020 Diagnostico Belgrano </p>
+          Copyright &copy; 2019 Next Level Company... Designed by Template Mo
+        </p>
       </footer>
     </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).on("change", ":file", function() {
+        var input = $(this),
+          numFiles = input.get(0).files ? input.get(0).files.length : 1,
+          label = input
+            .val()
+            .replace(/\\/g, "/")
+            .replace(/.*\//, "");
+        input.trigger("fileselect", [numFiles, label]);
+      });
+
+      $(document).ready(function() {
+        $(":file").on("fileselect", function(event, numFiles, label) {
+          $("#file_name_label").attr("placeholder", label);
+        });
+      });
+    </script>
   </body>
 </html>
