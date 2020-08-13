@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
   </head>
   <body>
     <!-- Navbar-->
@@ -76,30 +82,42 @@
         </div>
       </div>
     <!-- Page Body-->
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busqueda">
-
-    <table id="myTable">
-    <tr class="header">
-    <th style="width:60%;">Name</th>
-    <th style="width:40%;">Country</th>
-    </tr>
-    <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
-    </tr>
-    <tr>
-    <td>Berglunds snabbkop</td>
-    <td>Sweden</td>
-    </tr>
-    <tr>
-    <td>Island Trading</td>
-    <td>UK</td>
-    </tr>
-    <tr>
-    <td>Koniglich Essen</td>
-    <td>Germany</td>
-  </tr>
-</table>
+    <table id="example" class="display" style="width:100%">
+      <thead>
+          <tr>
+              <th>Fecha</th>
+              <th>Especialidad</th>
+              <th>Médico</th>
+              <th>Observaciones</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>10/10/2020</td>
+              <td>Traumatología</td>
+              <td>Tomas Orduna</td>
+              <td>Sin problemas</td>
+          </tr>
+          <tr>
+              <td>11/10/2020</td>
+              <td>Clínico</td>
+              <td>Tomas Orduna #2</td>
+              <td>Sin problemas</td>
+          </tr>
+          <tr>
+              <td>12/10/2020</td>
+              <td>Dermatología</td>
+              <td>Tomas Orduna #3</td>
+              <td>Con dermatitis aguda</td>
+          </tr>
+          <tr>
+              <td>13/10/2020</td>
+              <td>Alergia</td>
+              <td>Tomas Orduna #4</td>
+              <td>Alergia a los ácaros</td>
+          </tr>
+        </tbody>
+    </table>
 
 
       <!-- Call to Action -->
@@ -133,8 +151,18 @@
       </footer>
     </div>
 
-    <script src="js/jquery.min.js"></script>
+    
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#example').dataTable({
+            "language": {
+              "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
+          }
+        });
+    } );
+    </script>
+
   </body>
 </html>
