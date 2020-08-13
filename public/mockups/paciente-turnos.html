@@ -119,6 +119,94 @@
           </tr>
         </tbody>
     </table>
+    <div class="tm-page-col-right tm-form-container">
+      <h2 class="tm-text-secondary mb-4">Solicitar Turno</h2>
+      <form
+        action="contact.html"
+        method="POST"
+        id="tm_contact_form"
+        enctype="multipart/form-data">
+        <div class="form-group">
+        <div class="form-group-2">
+          <input
+            type="email"
+            id="contact_email"
+            name="contact_email"
+            class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
+            placeholder="Confirma tu mail de contacto"
+            required="" />
+        </div>
+
+        <div class="form-group-2 input-field">
+          <select class="tm-select" name="tipo" id="tipo">
+            <option value="select">Especialidad</option>
+            <option value="A">Traumatología</option>
+            <option value="B">Dermatología</option>
+            <option value="C">Clínico</option>
+            <option value="D">Cirujia</option>
+          </select>
+        </div>
+        <div class="tm-mb-5">
+          <textarea
+            rows="10"
+            id="contact_message"
+            name="contact_message"
+            class="form-control rounded-0"
+            placeholder="Informacion Adicional"
+            required=""></textarea>
+        </div>
+
+        <div class="tm-mb-4 tm-choices-container tm-text-secondary">
+          <label class="tm-w-50">
+            <input
+              type="checkbox"
+              name="ckb[]"
+              class="filled-in"
+              value="1" />
+            <span>Check Box 1</span>
+          </label>
+          <label class="tm-w-50">
+            <input
+              type="checkbox"
+              name="ckb[]"
+              class="filled-in"
+              value="2" />
+            <span>Check Box 2</span>
+          </label>
+        </div>
+        <div class="form-group-5 input-field">
+          <p>Fecha: <input type="date" value="2020-08-13"/></p>
+        </div>             
+        <div class="">
+          <button
+            type="submit"
+            class="btn btn-secondary tm-btn-submit rounded-0">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+
+      <!-- Call to Action -->
+      <section class="row" id="tmCallToAction">
+        <div class="col-12 tm-page-cols-container tm-call-to-action-col">
+          <div class="tm-page-col-right">
+            <div class="tm-call-to-action-box">
+              <i class="fas fa-3x fa-rss-square tm-call-to-action-icon"></i>
+              <div class="tm-call-to-action-text">
+                <h3 class="tm-call-to-action-title">
+                  Mantenerme informado
+                </h3>
+                <p class="tm-call-to-action-description">
+                  Adhierase a nuestro newsletter para recibir las ultimas novedades.
+                </p>
+                <form action="#" method="GET" class="tm-call-to-action-form">
+                  <input type="email" name="email" placeholder="Correo Electronico" class="tm-email-input" required />
+                  <button type="submit" class="btn btn-primary">
+                    Subscribir
+                  </button>
+                </form>
+              </div>
 
       <!-- Call to Action -->
       <section class="row" id="tmCallToAction">
