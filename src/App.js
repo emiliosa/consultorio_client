@@ -1,25 +1,36 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+/** images */
 import logo from './logo.svg';
+
+/** css */
 import './App.css';
 
-function App() {
+/** pages */
+import Home from './pages/home';
+import Gallery from './pages/gallery';
+import Contact from './pages/contact';
+import Patient from './pages/patient';
+import Professional from './pages/professional';
+import Profile from './pages/profile';
+import Error from './pages/error';
+import Navigation from './components/navigation';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navigation />
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/patient" component={Patient} />
+        <Route path="/professional" component={Professional} />
+        <Route path="/profile" component={Profile} />
+        <Route component={Error} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
