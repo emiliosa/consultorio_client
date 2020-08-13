@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+  </head>
+  <body>
+    <!-- Navbar-->
+	<div class="container-fluid">
+      <div class="row tm-brand-row">
+        <div class="col-lg-4 col-10">
+          <div class="tm-brand-container">
+            <div class="tm-brand-texts">
+              <h1 class="text-uppercase tm-brand-name">Diagnostico Belgrano </h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-2 tm-nav-col">
+          <div class="tm-nav">
+            <nav class="navbar navbar-expand-lg navbar-light tm-navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-0">
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="#"
+                      ><i class="fa fa-home"></i><span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="gallery.html">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="tm-nav-link-highlight"></div>
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrador
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownPacientes">
+					   <a class="dropdown-item" href="paciente-turnos.html">Gestion de usuarios</a>
+					   <div class="dropdown-divider"></div>
+					   <a class="dropdown-item" href="paciente-resultados.html">Gestion de contenido</a>
+					</div>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProfile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pedro&nbsp;&nbsp; <i class="fa fa-user"></i>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					   <a class="dropdown-item" href="Form.html">Mi cuenta</a>
+					   <div class="dropdown-divider"></div>
+					   <a class="dropdown-item" href="index.html">Cerrar Sesion</a>
+					</div>
+				  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+<!-- Page Body-->
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Rol</th>
+            <th>Activo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pedro Harte</td>
+            <td>Profesional</td>
+            <td>Si</td>            
+        </tr>
+        <tr>
+            <td>Tomas Ochotorena</td>
+            <td>Administrativo</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Emiliano Abarca</td>
+            <td>Administrador</td>
+            <td>Si</td>
+        </tr>
+        <tr>
+            <td>Damian Marino</td>
+            <td>Paciente</td>
+            <td>No</td>
+        </tr>
+      </tbody>
+  </table>
+
+      <!-- Page footer -->
+      <footer class="row tm-page-footer">
+        <p class="col-12 tm-copyright-text mb-0">
+        Copyright &copy; 2020 Diagnostico Belgrano </p>
+      </footer>
+    </div>
+        <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/parallax.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#example').dataTable({
+            "language": {
+              "url": "//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
+          }
+        });
+    } );
+    </script>
+  </body>
+</html>
